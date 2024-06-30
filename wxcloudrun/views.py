@@ -1,7 +1,7 @@
 import json
 import logging
 
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
 from wxcloudrun.models import Counters
 
@@ -18,6 +18,8 @@ def index(request, _):
 
     return render(request, 'index.html')
 
+def hello(request, _):
+    return HttpResponse("Hello, WXCloud!")
 
 def counter(request, _):
     """

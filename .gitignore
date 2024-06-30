@@ -1,0 +1,4 @@
+*.pyc
+docker-compose.yml
+Dockerfile.development
+.cloudbase/container/debug.json
